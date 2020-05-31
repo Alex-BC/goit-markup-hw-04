@@ -276,7 +276,7 @@ address .item:focus {
   display: flex;
   justify-content: center;
   margin-right: 30px;
-  width: 175px;
+  width: 170px;
   height: 90px;
 }
 
@@ -456,4 +456,44 @@ button {
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 93px;
+}
+
+/* Оформление иконок */
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.social-links_icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  color: #afb1b8;
+}
+
+.social-links_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.social-links_item {
+  display: flex;
+}
+
+.social-links_list:hover {
+  background-color: #2196f3;
+}
+
+.social-links_icon:hover {
+  color: white;
+}
+.clients-icon {
+  width: 44.27;
+  height: 49.23;
 }
