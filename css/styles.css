@@ -123,9 +123,9 @@ ul {
 address .item:focus {
   color: #2196f3;
 }
-
+/
 /* Hero */
-.hero-title {
+.hero-titl {
   margin-top: 0px;
   margin-bottom: 46px;
   width: 646px;
@@ -270,6 +270,8 @@ address .item:focus {
 .section .list-clients {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 .list-clients .item:not(:last-child) {
   display: flex;
@@ -283,8 +285,17 @@ address .item:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  cursor: pointer;
 }
 
+.list-clients .item:hover,
+.list-clients .item:focus {
+  border: 1px solid #2196f3;
+}
 /* Футер */
 .contact {
   font-style: normal;
@@ -458,16 +469,27 @@ button {
 }
 
 /* Оформление иконок */
-.phone-icon {
+
+/* Шапка */
+.mail-icon {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.tel-icon {
   width: 10px;
   height: 15px;
   margin-right: 10px;
+  fill: currentColor;
 }
+/* Функции */
 .feature-icon {
   width: 70px;
   height: 70px;
 }
-
+/* Команда */
 .social-links_icon {
   width: 20px;
   height: 20px;
@@ -493,6 +515,33 @@ button {
   margin-right: 10px;
 }
 
+/* Клиенты */
+.clients-logo1 {
+  width: 45px;
+  height: 50px;
+}
+.clients-logo2 {
+  width: 40px;
+  height: 52px;
+}
+.clients-logo3 {
+  width: 41px;
+  height: 43px;
+}
+.clients-logo4 {
+  width: 80px;
+  height: 42px;
+}
+.clients-logo5 {
+  width: 59px;
+  height: 47px;
+}
+.clients-logo6 {
+  width: 89px;
+  height: 45px;
+}
+
+/* Футер */
 .social-links-footer {
   display: flex;
   justify-content: center;
@@ -506,8 +555,4 @@ button {
 
 .social-links-footer:hover {
   background-color: #2196f3;
-}
-.clients-icon {
-  width: 44.27;
-  height: 49.23;
 }
