@@ -123,16 +123,17 @@ ul {
 address .item:focus {
   color: #2196f3;
 }
-/
+
 /* Hero */
-.hero-titl {
+
+.hero-title {
   margin-top: 0px;
   margin-bottom: 46px;
+  padding-top: 200px;
   width: 646px;
   margin-left: auto;
   margin-right: auto;
-
-  /* color: #ffffff; */
+  color: #ffffff;
 
   font-weight: 900;
   font-size: 44px;
@@ -160,8 +161,8 @@ address .item:focus {
 }
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* Section */
@@ -259,6 +260,14 @@ address .item:focus {
 .team-list-container:not(:last-child) {
   margin-right: 30px;
 }
+
+.team-list-container:hover,
+.team-list-container:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
 .team-list-container .social-links {
   display: flex;
 }
@@ -397,6 +406,11 @@ address .item:focus {
 .portfolio-filter .button {
   /* margin-right: 8px; */
   color: #212121;
+  padding: 6px 22px;
+  letter-spacing: 0.03em;
+  border: transparent;
+  border-radius: 4px;
+  background: #f5f4fa;
 }
 .filter-list:not(:last-child) {
   margin-right: 8px;
@@ -406,6 +420,7 @@ address .item:focus {
 .portfolio-filter .button:focus {
   color: #ffffff;
   background-color: #2196f3;
+  cursor: pointer;
 }
 
 button {
@@ -461,6 +476,13 @@ button {
   margin-bottom: 30px;
 }
 
+.projects-items:hover,
+.projects-items:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
 .portfolio-filter {
   display: flex;
   justify-content: center;
@@ -484,11 +506,38 @@ button {
   margin-right: 10px;
   fill: currentColor;
 }
-/* Функции */
-.feature-icon {
-  width: 70px;
-  height: 70px;
+
+/* Hero */
+
+.hero > .overley {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #757575;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/Header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+/* Функции */
+
+.feature .background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
 /* Команда */
 .social-links_icon {
   width: 20px;
