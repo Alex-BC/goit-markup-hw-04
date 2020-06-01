@@ -261,7 +261,6 @@ address .item:focus {
 }
 .team-list-container .social-links {
   display: flex;
-  justify-content: space-evenly;
 }
 .job-title {
   margin-top: 0;
@@ -459,7 +458,11 @@ button {
 }
 
 /* Оформление иконок */
-
+.phone-icon {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
 .feature-icon {
   width: 70px;
   height: 70px;
@@ -469,29 +472,40 @@ button {
   width: 20px;
   height: 20px;
   fill: currentColor;
-  color: #afb1b8;
-}
-
-.social-links_list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: contain;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
 }
 
 .social-links_item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
 }
 
-.social-links_list:hover {
+.social-links_item:hover {
+  color: white;
   background-color: #2196f3;
 }
 
-.social-links_icon:hover {
+.social-links_list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
   color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-links-footer:hover {
+  background-color: #2196f3;
 }
 .clients-icon {
   width: 44.27;
