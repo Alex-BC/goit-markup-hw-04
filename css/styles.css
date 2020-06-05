@@ -110,6 +110,8 @@ ul {
   margin-left: 50px;
 }
 .address .item {
+  display: flex;
+  align-items: center;
   color: #757575;
   text-decoration: none;
   font-style: normal;
@@ -212,6 +214,9 @@ address .item:focus {
 }
 /* Product */
 
+.figure {
+  margin: 0;
+}
 .product .product-list {
   font-weight: 700;
   font-size: 14px;
@@ -224,6 +229,7 @@ address .item:focus {
 .product {
   display: flex;
   justify-content: space-between;
+  padding-left: 0;
 }
 
 /* Team */
@@ -282,6 +288,7 @@ address .item:focus {
   margin: 0;
   padding: 0;
 }
+
 .list-clients .item:not(:last-child) {
   display: flex;
   justify-content: center;
@@ -299,12 +306,15 @@ address .item:focus {
   width: 170px;
   height: 90px;
   cursor: pointer;
+  color: #afb1b8;
 }
 
 .list-clients .item:hover,
 .list-clients .item:focus {
   border: 1px solid #2196f3;
+  color: #2196f3;
 }
+
 /* Футер */
 .contact {
   font-style: normal;
@@ -565,29 +575,42 @@ button {
 }
 
 /* Клиенты */
+
 .clients-logo1 {
   width: 45px;
   height: 50px;
+  fill: currentColor;
+  cursor: pointer;
 }
 .clients-logo2 {
   width: 40px;
   height: 52px;
+  fill: currentColor;
+  cursor: pointer;
 }
 .clients-logo3 {
   width: 41px;
   height: 43px;
+  fill: currentColor;
+  cursor: pointer;
 }
 .clients-logo4 {
   width: 80px;
   height: 42px;
+  fill: currentColor;
+  cursor: pointer;
 }
 .clients-logo5 {
   width: 59px;
   height: 47px;
+  fill: currentColor;
+  cursor: pointer;
 }
 .clients-logo6 {
   width: 89px;
   height: 45px;
+  fill: currentColor;
+  cursor: pointer;
 }
 
 /* Футер */
